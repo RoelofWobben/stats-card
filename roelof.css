@@ -1,0 +1,83 @@
+:root {
+  --dark_blue : hsl(233, 47%, 7%);
+  --desaturated_blue: hsl(244, 38%, 16%);
+  --violet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --transparent-white-main: hsla(0, 0%, 100%, 0.75);
+  --transparent-white-stat: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/*--------- MOBILE FIRST ---------*/
+
+body{
+    font-size: 15px;
+    background-color: var(--dark_blue);
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1{
+
+}
+
+p{
+
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width:327px;
+    background-color: var(--desaturated_blue);
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.image {
+    width: 327px;
+    height: 240px;
+    background-image: url(./images/image-header-mobile.jpg);
+    background-size: cover;
+    background-color: var(--violet);
+    background-blend-mode:multiply;
+    
+}
+
+.text {
+    width: 327px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.stats{
+
+}
+
+.companies{
+
+}
+
+.templates{
+
+}
+
+.queries{
+
+}
+
+
+
