@@ -27,7 +27,9 @@ body{
 }
 
 h1{
-
+    color: var(--transparent-white-main);
+    font-family: Inter;
+    text-align: center;
 }
 
 p{
@@ -44,6 +46,8 @@ p{
     background-color: var(--desaturated_blue);
     border-radius: 20px;
     overflow: hidden;
+    padding-left: 40px;
+    padding-right: 40px;
 
 }
 
@@ -54,13 +58,14 @@ p{
     background-size: cover;
     background-color: var(--violet);
     background-blend-mode:multiply;
-    
+}
+
+ h1 .accent{
+    color: var(--violet);
 }
 
 .text {
     width: 327px;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 .stats{
