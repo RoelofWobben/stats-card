@@ -1,10 +1,10 @@
 :root {
-  --dark_blue : hsl(233, 47%, 7%);
-  --desaturated_blue: hsl(244, 38%, 16%);
-  --violet: hsl(277, 64%, 61%);
-  --white: hsl(0, 0%, 100%);
-  --transparent-white-main: hsla(0, 0%, 100%, 0.75);
-  --transparent-white-stat: hsla(0, 0%, 100%, 0.6);
+  --dark_blue : hsl(233, 47%, 7%);                   /*(main background)*/
+  --desaturated_blue: hsl(244, 38%, 16%);            /*(card background)*/
+  --violet: hsl(277, 64%, 61%);                      /*(accent)*/
+  --white: hsl(0, 0%, 100%);                         /*(main heading, stats + [Inter])*/
+  --transparent-white-main: hsla(0, 0%, 100%, 0.75); /*(main paragraph) + [Inter]*/
+  --transparent-white-stat: hsla(0, 0%, 100%, 0.6);  /*(stat paragraph) + [Inter].    Bij DESKTOP : [Lexend Deca] !!! */
 }
 
 * {
@@ -18,6 +18,7 @@
 
 body{
     font-size: 15px;
+    font-family: Inter;
     background-color: var(--dark_blue);
     display: flex; 
     align-items: center; 
@@ -27,14 +28,18 @@ body{
 }
 
 h1{
-    color: var(--transparent-white-main);
-    font-family: Inter;
+    color: var(--white);
     text-align: center;
+    padding-top: 40px;
+    font-weight: 600;
 }
 
 p{
-
-
+    padding-top: 20px;
+    color: var(--transparent-white-main);
+    padding-left: 10px;
+    text-align: center;
+    line-height: 1.5;  
 }
 
 .container {
@@ -42,7 +47,7 @@ p{
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-    width:327px;
+    width:345px;
     background-color: var(--desaturated_blue);
     border-radius: 20px;
     overflow: hidden;
@@ -52,27 +57,41 @@ p{
 }
 
 .image {
-    width: 327px;
-    height: 240px;
-    background-image: url(./images/image-header-mobile.jpg);
-    background-size: cover;
+    width: 345px;
+    height: 255px;
     background-color: var(--violet);
-    background-blend-mode:multiply;
+    object-fit: cover;
+}
+
+
+.image img {
+    max-width: 345px;
+    height: 255px;
+    mix-blend-mode: multiply;
+    opacity: 0.8;
+    object-fit: cover;
 }
 
  h1 .accent{
     color: var(--violet);
 }
 
-.text {
-    width: 327px;
+.stats{
 }
 
-.stats{
-
+.stats p{
+    text-transform: uppercase;
+    color: var(--transparent-white-stat);
+    font-size: 13.65px;
+    font-size: 400;
+    padding-top: 0px;
 }
 
 .companies{
+    text-align: center;
+    color: var(--white);
+    font-family: 'Inter';
+    font-weight: 400;  
 
 }
 
