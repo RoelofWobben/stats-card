@@ -123,13 +123,51 @@ h1{
     .text{
         width: 540px;
         text-align: left;
-        padding-top: 80px;
+        padding-top: 70px;
         padding-left: 80px;
         padding-right: 80px;
     }
 
     .image{
         width: 540px;
+    }
+
+    .header p{
+        padding-left: 0px; 
+        padding-top: 30px;
+    
+    }
+
+    .stats{
+        display: flex; 
+        flex-direction: row;
+        padding-left: 0px;
+        padding-right: 75px;
+    
+    }
+
+    .stats h1{
+       padding-top: 45px;
+    }
+
+    .text p{
+        font-family: 'Lexand Deca';
+        padding-right: 60px;
+    }
+
+    .stats p{
+        padding-right: 25px;
+    }
+
+    .image {
+        width: 540px;
+        height: 446px;
+    }
+    
+    
+    .image img {
+        width: 540px;
+        height: 446px;
     }
 }
 
