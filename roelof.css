@@ -104,6 +104,8 @@ h1{
 
 }
 
+/*--------- DESKTOP ---------*/
+
 @media (min-width: 1150px){
 
     h1{
@@ -151,8 +153,8 @@ h1{
     }
 
     .text p{
-        font-family: 'Lexand Deca';
-        padding-right: 60px;
+        font-family: 'Lexend Deca', sans-serif;
+        padding-right: 20px;
     }
 
     .stats p{
