@@ -17,14 +17,13 @@
 /*--------- MOBILE FIRST ---------*/
 
 body{
-    font-size: 15px;
+    font-size: 0.973rem;
     font-family: Inter;
     background-color: var(--dark_blue);
     display: flex; 
     align-items: center; 
     justify-content: center;
     height: 100vh;
-    width: 100vw;
 }
 
 h1{
@@ -79,29 +78,23 @@ h1{
     color: var(--violet);
 }
 
-.stats {
-    padding: 20px;
-    color: var(--white);
-    font-family: 'Inter';
-    font-weight: 400;  
+li {
+    list-style-type:none;
+    color: var(--transparent-white-stat);  
 }
 
-.stats p{
-    text-transform: uppercase;
-    color: var(--transparent-white-stat);
-    font-size: 13.65px;
-    font-size: 400;
-    padding-top: 0px;
+ul {
+    margin-top: 50px; 
+    display: flex;
+    justify-content: space-between;
+    width: 275px;  
 }
 
-.companies{
-    padding-bottom: 20px;
-
-}
-
-.templates{
-    padding-bottom: 20px;
-
+.strong {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    color: var(--white) 
 }
 
 /*--------- DESKTOP ---------*/
@@ -140,25 +133,8 @@ h1{
     
     }
 
-    .stats{
-        display: flex; 
-        flex-direction: row;
-        padding-left: 0px;
-        padding-right: 75px;
-    
-    }
-
-    .stats h1{
-       padding-top: 45px;
-    }
-
-    .text p{
-        font-family: 'Lexend Deca', sans-serif;
-        padding-right: 20px;
-    }
-
-    .stats p{
-        padding-right: 25px;
+    ul {
+        width: 350px; 
     }
 
     .image {
