@@ -94,7 +94,7 @@ body{
     display: flex; 
     align-items: center; 
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 h1{
@@ -112,13 +112,12 @@ h1{
     background-color: var(--desaturated_blue);
     border-radius: 20px;
     overflow: hidden;
-    min-height: 375px;
-
+    margin: 1rem; 
 }
 
 .image {
     background-color: var(--violet);
-    width: 50%; 
+    max-width: 100%; 
 }
 
 
@@ -129,15 +128,14 @@ h1{
 }
 
 .text {
-    width: 50%; 
-    padding: 30px;
-    text-align : center; 
+   padding: 30px;
+   text-align : center; 
 }
 
 .header p{
     color: var(--transparent-white-main);
-    padding: 20px 10px;
-    line-height: 1.5; 
+    line-height: 1.5;
+    margin-top: 30px;  
 }
 
 .accent {
@@ -153,7 +151,8 @@ ul {
     margin-top: 50px; 
     display: flex;
     justify-content: space-between;
-    gap: 1rem;   
+    gap: 1rem;
+    padding: 0;    
 }
 
 .strong {
@@ -165,39 +164,31 @@ ul {
 
 /*--------- DESKTOP ---------*/
 
-@media (min-width: 1150px){
+@media (min-width: 700px){
 
     h1{
         text-align: left;
-        padding-right: 50px;
-
     }
 
    .container {
-        max-width: 1080px;
+        max-width: 67.5rem; 
         flex-direction: row;
         align-items: flex-start;
         flex-direction: row-reverse;
-        margin: 1rem;  
+        
 
     }
 
     .text{
-        width: 50%; 
         text-align: left;
         padding-top: 70px;
         padding-left: 80px;
         padding-right: 80px;
-    }
-
-    .header p{
-        padding-left: 0px; 
-        padding-top: 30px;
-    
-    }
-
-    .image {
         width: 50%; 
+    }
+
+    image {
+      width: 50%; 
     }
 
     .image img {
