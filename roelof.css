@@ -57,7 +57,6 @@ a:not([class]) {
 img,
 picture {
   max-width: 100%;
-  display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -112,7 +111,8 @@ h1{
     background-color: var(--desaturated_blue);
     border-radius: 20px;
     overflow: hidden;
-    margin: 1rem; 
+    margin: 1rem;
+    max-width: 30rem;  
 }
 
 .image {
@@ -158,13 +158,13 @@ ul {
 .strong {
     font-size: 1.5rem;
     font-weight: 700;
-    display: flex;
+    display: block; 
     color: var(--white) 
 }
 
 /*--------- DESKTOP ---------*/
 
-@media (min-width: 700px){
+@media (min-width: 50rem){
 
     h1{
         text-align: left;
@@ -173,17 +173,13 @@ ul {
    .container {
         max-width: 67.5rem; 
         flex-direction: row;
-        align-items: flex-start;
+        align-items: stretch;
         flex-direction: row-reverse;
-        
-
     }
 
     .text{
         text-align: left;
-        padding-top: 70px;
-        padding-left: 80px;
-        padding-right: 80px;
+        padding: 3rem; 
         width: 50%; 
     }
 
@@ -191,14 +187,9 @@ ul {
       width: 50%; 
     }
 
-    .image img {
-        height: 100%; 
-        width: 100%; 
-    }
     
-    
-    
-}
+
+  }
 
 
 
